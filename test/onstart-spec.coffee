@@ -11,4 +11,5 @@ describe 'Onstart', ->
   describe '->onEnvelope', ->
     describe 'when called with an envelope', ->
       it 'should return the message', ->
-        expect(@sut.onEnvelope({message: 'anything'})).to.deep.equal  {timestamp: Date.now()}
+        envelope = {}
+        expect(@sut.onEnvelope envelope).to.deep.equal timestamp: Date.now()

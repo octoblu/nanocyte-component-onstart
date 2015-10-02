@@ -4,6 +4,6 @@ class Onstart extends ReturnValue
   onEnvelope: (envelope) =>
     message =
       timestamp: Date.now()
-    return message
+    message
 
 module.exports = Onstart
